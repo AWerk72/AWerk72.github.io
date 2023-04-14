@@ -103,29 +103,11 @@ nav {
   
 
 /* the styles for the main content */
-
-h1{
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left:0.5em;
-  font-size: 36px;
-}
-
-
 h2{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left:0.5em;
     font-size: 36px;
-}
-
-p{
-  font-size: 30px;
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 0;
-  
-  
 }
 
 .grid-container {
@@ -147,40 +129,20 @@ p{
   }
 
   .grid-item img {
-    width: 222.67px;
-    height: 222.67px;
-  }
-
-
-  .single-grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 2fr;
-    background-color: white;
-    gap: 20px;
-    align-items: center;
-  }
-  
-  .single-grid img {
     width: 50%;
-    margin-left: 10px;
+    height: auto;
   }
 
-  .single-grid p {
-    width: 50%;
+
+ *{
     margin: 0;
-    font-size: 1em;
-    line-height: 1.5;
+    padding: 0;
+ }
+ #map{
+    height: 500px;
+    width: 100%;
+    
   }
-  
-  
-  .single-grid p {
-    width: 50%;
-    margin-left: 10px;
-    font-size: 1.2em;
-    line-height: 1.5;
-  }
-  
 
 
 /* the styles for the footer */
