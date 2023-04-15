@@ -13,9 +13,9 @@ html{
 
 /* the styles for the elements */
 body {
+  min-height: 150vh;
 	background-color: #931420;
 	width: 600px auto;
-  height: 100%;
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     margin-left: 10px auto;
@@ -31,7 +31,7 @@ a:focus, a:hover {
 header{
 	padding-top: 1em;
 	padding-bottom: 2em;
-    padding-left: 1.2 em;
+    padding-left: 1.2em;
 	border-bottom: 3px solid black;
 	background-image: linear-gradient(30deg, white 0%, #931420 100%);
 	
@@ -44,8 +44,11 @@ header h1{
 }
 
 header img {
+  margin-left:10px;
+  margin-bottom:10px;
 	float: left;
 }
+
 .shadow {
 	text-shadow: 2px 2px 2px var(--global-color-1);
 }
@@ -116,6 +119,7 @@ h2{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left:0.5em;
+    padding-right: 0.5em;
     font-size: 36px;
 }
 
@@ -153,6 +157,7 @@ p{
 
 
   .single-grid {
+    
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 2fr;
@@ -160,36 +165,84 @@ p{
     gap: 20px;
     align-items: center;
   }
+
+  .paragraph-grid {
+    
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2fr;
+    background-color: white;
+    gap: 20px;
+    align-items: center;
+  }
+
   
   .single-grid img {
-    width: 50%;
+    width: 222.7px;
+    margin-top: 10px;
     margin-left: 10px;
   }
 
   .single-grid p {
-    width: 50%;
+    width: 90%;
+    margin-left: 10px;
     margin: 0;
-    font-size: 1em;
+    font-size: 20px;
     line-height: 1.5;
   }
   
+  .contactgrid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    width: 1fr;
+    height: 300px;
+    color: black;
+  }
   
-  .single-grid p {
-    width: 50%;
-    margin-left: 10px;
-    font-size: 1.2em;
-    line-height: 1.5;
+  .contactgrid-item {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    
+  }
+
+  .contactgrid-item img {
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .second-row {
+    grid-column: 1 / span 2; 
+  }
+
+  .second-row p{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
   }
   
 
 
 /* the styles for the footer */
 footer{
-	background-color: #931420;
+  position: absolute;
+  bottom: -300px;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+	background-color: white;
+  border-top: 2px solid black;
 }
 
 footer p {
+  font-size: 16px;
+  margin-bottom: 10px;
 	text-align: center;
 	padding: 1em 0;
-	color: white;
+	color: black;
 }
